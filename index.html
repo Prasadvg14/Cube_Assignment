@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma UI Implementation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <p class="body-line">Get 25% off your first month. Free Shipping on U.S orders.</p>
+    <header>
+        <nav id="menu" class="hidden">
+            <button id="hamburger">&#9776;</button>
+            <ul class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id ="navbar" class="navbar">
+            <img class="alcami" src="https://media-hosting.imagekit.io/aa13680cf0a14511/Column.png?Expires=1838305889&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=kjimwwBHDO18MBRiDWut7b6GnltB4Gmqk7hE3ZLCgw3m0blNhDQQhVSJ3p4Ki7epO5PWXXBpL9T52Dv~SfTNgmW5OlA7EBxArkyUYk2vMMyFi6IG2a~XT5L-DoPvTX66nMZbmiP0AzbnvCxCqhhBN5MHKKUiIc7aQSL7kpQopN8v5aAq9~a4nMT7-BN8k6pA3QahfTZmjiTkJWzw5bUuL7y1JAqjmuasDr7ZrVksV9ohHynOvAUbMV3XYOc5NISaBVYLmJ68xksTlAeolbcN2U91zkN0OsMrgcOfHdVJaIVC87La22iiTCP3g5H-3JRGiJM83DaWPi17L~UAbpmO9g__" alt="ALCAMI" />
+            <ul id="nav-ul" class="ul-items">
+                <li>Home</li>
+                <li class="li-shop" >Shop </li>
+                <li>Elements</li>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-box" class="hidden search-input" placeholder="Search...">
+                <button class="search-button" id="search-icon"><img class="search-icon" src="https://media-hosting.imagekit.io/5a825601a4c94239/search-interface-symbol.png?Expires=1838304518&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=an314EnCzyH6hjb8oKhqYVOYTmx4CI~EGUdlkzEm8iSLxW7aSsyzFsi5P1fCVQEhPkLh1J1mUIbEuwnwbvNxgoPjy0~KJulAIlk2D3cNPKu2J3mACE1dCkD0-DIvstQC6AXqXuy~5cjULYNYWLX5uDVCcuVsJnESIWscX5zLbBv-~Bncmr2aRih9f3TMoCvZOUmO1E1L1bnmSWx55Uj8xddDxn2sP8ITvYaH~iiv6~FfjeDKT8uS32AmEAL1lateCAOT6FLzniYXjnIctdHda4qwqAd18tVOhgyLaWfK2KSsaMwh9VJ8ilo17ojAZrx6kLdhBAVxs215KQAHNSqw9g__" /></button>
+                <button class="shop-button">Try Alcami -> </button>
+            </div>                
+        </nav>
+    </header>
+
+    <section class="section1">
+        <div class="section1-left">
+            <div class="section1-left-ovel">
+                <div class="">
+                    <img src="https://media-hosting.imagekit.io/d01da60e1476420a/star.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=iasa1Mcxtup2vKPBDBvv5X5us32jeUegP8eNiFHuxUPaTDqRii74sC9TYVteEoIvmLrN39NvzEBVj1MJPQ9hT51kKUEC6rcJLYeCSMr6GEEd19bwuwFB21fpB0L~LerVtqYhbeT1unAlMVSvtcs3VczyXBvvt0iQ7y0oz5Yi80Zny4fwlH0EOo-kOe7lY4hyFS2na~xsljKApmNVcWQ-lZ3TRh3-UsrwtzA73UIHhfua61ywbYfeac7X5c9NlfaC0hJI~2uQa02rhxSVv48BLv95kpaFjs7-QqjxHnl9EubRG0Yd0uPfcYqBMGUx0j5K1tZ~mh-7qzKBcvCfZ2hBGQ__" alt="star" class="star" />
+                    <p>4.8 star rating</p>
+                </div>
+                <p>awarded the top adaptogen blend in the world</p>
+            </div>
+            <h2>Achieve your highest self.</h2>
+            <div class="row">
+                <div>
+                    <span class="golden-span">10x</span>
+                    <p>concentration</p>
+                </div>
+                <div>
+                    <span class="golden-span">9</span>
+                    <p>powerful <br> ingredients</p>  
+                </div>
+                <div>
+                    <span class="golden-span">1000 mg</span>
+                    <p>of Adaptogens <br>per dose</p>
+                </div>
+                
+            </div>
+            <div>
+                <button class="shop-button">Shop Now <img src="https://media-hosting.imagekit.io/da0c09c9b0284177/right-arrow.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=CxOTvGUcaxXd6QlYVs98NbQHDXgX~Ka-dsVZSLvscT28aTpnY~NPob1CJpq8WLqPkFzBxgaTO-F6FsckCLibf7hfVSS6CsKtnfAt7BuwhUeuRevPQ7Tg2HwWxK8qh7S902KMacy7gFJ6LCBhtyD56OyW01Rb9XM-RoLeH05EzI6Hp4UJMpVK2W86uPsRfRhjOFMsFFPnVsitnWPr2KqEKW1CVLWCkfyvOwVHujpnka6oYSh22dkB6I2t-yk64wxyb4rlm0qdi5AZcNN3y5pEf5HYu5zmQ6CtBBGm8O57x2gZUXJwe3O~165EqzbGiI64Ov7FQXC6ssJrvZWyuta4QQ__" alt="right-arrow" /> </button>
+            </div>
+            
+        </div>
+        <img class="section-combi-img" src="https://media-hosting.imagekit.io/69491380eef545ca/section1.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WOlniVUGWKr1Z-lfn7Qk9VcC7gmnxmj3n7fRnA0a8G1PX5OB~Pk08kgo0haYc8V0pO6MVXxGvSIBKas1Z8hezszgYKH3TUW6Mb98QQMLiiu1NRyv4R1P32KHjTkjDPTA0rWojz1PV4EXYjqawRA~DQBuYgyX-0C6P7zaI5NYdPrn3nI1pMI2Nmtxr9L-0C3HxsdrELSZKDu15K1W2COgIiftSr-r99ZPdyi7o~RtRNZqRydl3BTcLeTWiPKrwIKYpsa0G8LUKzxqZscDaUKQsnYM4Rlp83BYacJnGiqIAHuyDMTDiCLdZYSxcXJbZtQsjcl33LDDnOAcM4U69Wt9sQ__" alt="Hero Image">
+    </section>
+
+    <div class="incredible-taste-line">
+        <p > Incredible Taste and Effects You Can Feel</p>
+    </div>
+
+    <section class="section2">
+        <img class="section2-left-img" src="https://media-hosting.imagekit.io/8210ad188c7e4e02/section2-left-img.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=YaCshZ1NeA92SCfCAvdwRz-npkKhyvqMC2OWZRAxUkUREiPa~3ehK0GgO-LA7ihKVf9G-9AzqBuGmPMzvelioOdPfRH2ma~wVCGnxsvdkUyWO1c4hppOp-9EgwEKI0JN1s~M5~nH83~LIwvz7S2Of5wQ3oDoU5OmKvBFxKH-I4i~aXdip3UOL0k505vMrOt7A0btzq3jIODHATUHfe-ERPLQjLyXJyWVJvwCfzTZ7YTRZo3D8C~K-0CPvUu-sPqPu~PlF6U363~PJOebuc2p2DHePpBxM6R4wKPe6zc-My3QjRWvztZul1IWBhL3cyaWGvE94R3RmGQxBm92noYwNA__" alt="group-img" />
+        <div class="section2-right-div">
+            <p class="s2-golden-line">9 POWERFUL ELEMENTS</p>
+            <p class="s2-bold-para">All of the Best Ingredients, None of the Compromise</p>
+            <p>Alcami uses x10 potency in every serving, formulated for maximum absorption to ensure your body gets the most out of every scoop.</p>
+            <div>
+                <button class="shop-button">View full ingredients <img style="margin-left: 15px;" src="assets/right-arrow.png" alt="right-arrow" /> </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="row guarantees">
+        <p style="font-size:16px;" class="s2-golden-line">OUR GUARANTEE</p>
+
+            <div class="row garantee">
+                <img src="https://media-hosting.imagekit.io/703d0901ed474009/g-logo1.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=s2~J-dgfux~NRWKJu0WMwHOwUm~vvjm8vLybfABjVo9HbTPiUUwMDr5LYHIBwJNZdmyTJc4SB-y-kCa2TeFO48dGy2KhURpfmPcqbzsuafMQJepWNp~AgnEAmJJO3VRNtWCa9aeBUaDzHczjXrvYtRnqHtiGU2VMHCvdJ9SIyWSyWjCvQ~SQWfoArkitpx~SuVIJVq48VOZeLL4ew4OYaFU~zwH9E8tsUGkSotCVIikXX1RT~Ffd3K7JLzPMfnH-vFykMBqNpW-OQR1qbnYMgy6PXMmtnHNgRiNwH2YmBiVQTLdr-KMU8~suW7NRvFHTkVcT7KgzYJLD4NN8Q8R5sA__" alt="g-logo1" />
+                <div>
+                    <h5>30-day Guarantee</h5>
+                    <p>Love Alcami or send it back</p>
+                </div>
+            </div>
+            <div class="row garantee">
+                <img src="https://media-hosting.imagekit.io/b340d00a62fe4b9f/g-logo2.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=SQV2iLw2r5PqSer8IPEEVN49FB6dMb0jaVXwNcp73V-qdrrliodVvKIhchq7k146t7vt4W3ezOeELEajm4XGrpFrFPyJZ4OQ7Ec77ZC1d9pXtYQezDfzQroJb0vK4Uwb4LwGbjS8d0oFiadXjH6TtNgju03ScVJvuPQ3Y3~yfVTsyf-pA6EZrTpPEaY0HvyC6s85hMdrL98SZiBtb1VE6-HtUI5AHYY0dVJUpWBRrMw2ITNylsw~yB1zW-VVta7LF3HFQyHYqLh2E7JPe27E6CJZCaOY2ZOxhAk~zw-SuNTxWZVqhzFwu3Leii-4-11yUr8GQozrYEP-J0HSuPOICw__" alt="g-logo1" />
+                <div>
+                    <h5>30-day Guarantee</h5>
+                    <p>Love Alcami or send it back</p>
+                </div>
+            </div>
+            <div class="row garantee">
+                <img src="https://media-hosting.imagekit.io/a48b46500ec64b5f/g-logo3.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ikXWZnlQyf9QlM44km6Tm7dDAsY-53kkDMhgFid~ZcPrmtBWo77Wtevy3dCW6ZX4YUfF5RvqNwMavH7ezItTiC7fjddUrkrHY5yiY3UBvobeDku6o-76Qa2rlYd6kw2eCwdM6cxoV97~DxfaAtoLKqTTy0VHoDtR9IniFGV1m74hQPxP5sm3YtXhv4Iq4NmG5LKWLQuXYWex9jyV0gmd8IWR20wQhTwcw-8gghZ860ZbWop~v5bzgsbGXh3cvUDnh3nAX7TduanCuzh~JocLgX2uDiFY1XjHNRsisa4NvcnmjsWayQbhJqcWNGNHtnRQB6avRJcOFY22A7uzcudbWg__" alt="g-logo1" />
+                <div>
+                    <h5>30-day Guarantee</h5>
+                    <p>Love Alcami or send it back</p>
+                </div>
+            </div>
+            <div class="row garantee">
+                <img src="https://media-hosting.imagekit.io/ba5f669ce4e04388/g-logo4.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=IlT~Xf2t0l8vnynILc3doFATvS2Ldzz2it0fN-oqykCNN3X0ZGYq4rfkx2ZPiM0J8sfOib9jypfLPV6mcU6GbcukmIv3LCey7ek9Q2Jyn~M023gi1ffK5MLkCBTm9ri~O0eiRSWMKzytoP4R8s3mWIkNY2TVGpBOB69Dn4nZ48keBpjWmJF9ZPvOq6pSEQY8v3DLTngr-vwyrSST9Z4uwbXF-NCsUQscnDEnuwARlP6jyRuGcCrJprml1Yg4I8XJRNYQD6tY2AHeuOlpetqDniLXqEyksjRah-~AowWtLxkg-qfRRQbpVeFuSazTqfN3MttHuhJbrfu~ZHfTf4hltA__" alt="g-logo1" />
+                <div>
+                    <h5>30-day Guarantee</h5>
+                    <p>Love Alcami or send it back</p>
+                </div>
+            </div>
+    </div>
+
+
+    <section class="section3">
+        <div class= "row magzines">
+            <h3>AS SEEN IN</h3>
+            <img src = "https://media-hosting.imagekit.io/df3424ac47b54212/fastCompany.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=RlGL3vB-N0TZpJ1NrXzU-aJvhnafH9m3QCf8O7s~nH8moB7X~barVfGM2XGNqOJomsz4lgGuwOo6Bk3UMjZBY0PPPhpWo72~-Q9B-FMrseTzhaOsk8Ts4k1c4iGB~rTHsrXWDGvJYr52R6wa5YYixwUZo3mWGV5yf0rjy3dKYxi5eyCSOxizigLM7pJ1-dYWCXBJsyCzI~SW0dvkmscvew2LvfirEyVNH-PZ2cl1r~4WqjbnV4Sr7qTCtoFcFrYxVuZPRc3cWssxBGwKgqmHNRNTTnsKhg2dlEs4bDaLgFgNuLgWl~HEA6R8A~mGlvELLF7djiyN7Ayd9yIkpuxiWA__" />
+            <img src = "https://media-hosting.imagekit.io/025bbaaa4f4a49a3/forbes.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=dgn0ZfkY3B7VgvPyNFmqWmrdT9QLGpixaw2rKMMCG6L5lVe~nJDXU8bl3fO1SgYzsBmMHLU6pLcMLFXxhEUlDRaXiansc~YwK~AaQXgIb~LTIw1lhMqPk8UzIYqQC3ECeSLliSqAxaCWgHGGnf40HIxzlSnbML2sNzeSLKHiOanXkixCNXyqfnf0siIZXOrfBVSyGKi6WqTqJa47Ndh3JIcWwhKAqa2r0YNYarTdTEzm~Zfjc2KZswBtvN1fi4FshWpzL6oO18dWFbLow8XgTh7zFL~RwZQUCaLsm89GaL-8bUiKRB6I7ubgNbT97ak3WJWh6Xt~QEMOSR0SGSwa~A__" />
+            <img src = "https://media-hosting.imagekit.io/5bedf324d8f9465b/goop.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=xndp31XocFvbR8tweS-fLZd4L600hjWfXjxRY2WTZgkx3xLomktxtcpfp75eMCF6YCYGtN5QG~HmvAfMXzQ~d~n7P2zzZtWCnBtyXNDJPdhTNai3aLfDuAKdr92xfhLMVp-XYN05~2hWe2vI3Gjp0~hwcpp2CddeoHIo0IGgrtMAzgJEfH9i2qufOodcJ~5kY9uxCdixYO5mCB5xTjXX3wkTm~mqgdavDUPY~xoReWFaxbhbkL-LubRLMVQ~QhzXyU-vNhnaCZru2QPLREZki34vCqSLA7sdOV6j-IWDFId0CqXdGyfGuV3nGN4DEZZq4SpAiqZykAclyRIGwzB6fw__" />
+            <img src = "https://media-hosting.imagekit.io/22f6837949454ec5/time.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vrqXsahU6LNefbfBqAhOJFLCPGAZopcE3oL78piNMaIgb2t3og6gORlAtTZCaGsEyeWagLYEbXgghjJYvI-rCMcr5p50lz7OX5jzyKBLog1~Y0Uitvurv6XqOoqiOojpmLYmC9sVmlzgRSGMDr~b9FYytkQnWKb0Z-UOKzzmIRqc3m7CAHUwERYMY8yrB4psl88UMuxQQPMHGL3l~1Rm-tLFsjbZG4LoNEHi7pkudOlOefYUnKqb6h6sdpb-ZYlIsckNZmNgXTZNMLOTtluxXMczKVuhVobGR81W8I4DrcMexy-jg2j1exw7jdDmacJfooT82yY137JTHxXiMjniGQ__" />
+            <img src = "https://media-hosting.imagekit.io/87c42d57b0f64150/newYorkTimes.png?Expires=1838262974&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=2vqZfKFTGfO4YkbKFmvjoXtSISPHcn7TZwUzmSKWh~CzHTqm~iUrL2p1uTDfLiJxLSz4s3LfiYtiff1Qw2AnUgbbtIlcmog8H4Xp1XtCpf10SmaE-ldFvXRP2iLCDrUYNSCMovvUjH2qo2HT1q8bgTaM2FfeCy7fO403MlwXCqb9SITwarnIYgjUu-KH5-roGmJ8e1EDgmia5SW~-4XSDqPtBLeS5sXAhdR50-zt8kCimMO5fCq-ZOsPKJn9xb1uGbocUR~PqCaQu5ZG8mJ1X4CWPqx-z8h6dwkyqaqNaQz0HzrXOaJqx7I7xHCV3C8oaKEflSfkJjUCy~qmkysAFg__" />
+        </div>
+
+        <div class="products-content">
+            <div>
+                <div class="carousel">
+                    <img class="product-img" src="https://media-hosting.imagekit.io/204738de31874443/Group%201000004277.png?Expires=1838311881&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mmUAD4tVlyIhtcoOxPG6dG7qXDR7jF9l7EZj6CtS2XW7toX~9Zv8bsKLKEqrLCvKyzIVntdmSspf1pvq7hRH5EhI9XICWH4OzxWvLOAYZQn5wCvIgFtuBjF5KH0M7hu2eE6CVtgXWjeDELpPBiILnFJdP-grXm6wkyC-Kk6a~dBOP~8kGClUDm86pEcfF35mbwyReJrWXwtuA92R-ktdkREIErmvWMo06ScVUeuElVJ6k8nxYSHLCH18HZo8HrltbUToDYWdvZRqRUqtC6ui30ozWUW2~CZT08ryEtnJ0ao8Cmq5i9oyBE4lRTkL4LAEDrvT8uPB3hNFKamRdQ6lFg__"/>
+                </div>
+                <div>
+                    <div>
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/cd34c0f71ba5447f/Rectangle%206684.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=K1OMa06MGCMGuEoqv~NhWD5wQuw-ubevgtk-j-kwSwp-aXaEVH85IMrXoR444nfbevF36Ba-g-yBrWkpBeCrSAAiU4axjklP6aDzvchzZR8vZ-JBwGcHt-oU~7UMLvBUhrGLpCwIHV70w7qS4Ik1p1UuqWLd1GlLP0mn5wfmIlSvYErMfXX2Byak-A1iJBB8zNi-Y-r5RTl6l1sVqiMARN7MBnqgKKiYJ9s56o9EJTE14hA~mpLW3U7OtkVRw4qYHJtZ5ibE3AmCb6yLdCLT~9wMzNhS~PTO8MBwsWz-BeT05zidKCYWgLKiJXWV5G1z2CrrKgG21WRo6GqGkCfSRQ__" />
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/f7af2fbb48274f5f/Rectangle%206685.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WjcLD0wkSPxEjbH8GLc8AsQaHQ0C-c4lrW9H4dW5V4Y28Bc33c0MNgv2E4--KssWfA9xdqBW186AxxzfoK70LizQR7j9C-lkrh8P2Dy2iT4PUoZjkMKSfLSYfolM8r0FVzcuZbaDEvVR~ds~TDVJadyPF9x-~-sRiXKfbnn56YKZ91OwUINVMz6MRrLg5xWy6yJd7iDaKLB43AJZLWyB~uApXHe7sXJry5~EfLjz9yDuq58iIm9v5hTOT10Z-OQ33aZnS9kp1GnbCCOnoqzF8N-9e6Adi5JLk3RFhY4MuZSKthE9rpTQGEf9ptjrWNvqEOUq-aUxUJJJj~Bd03NkOQ__" />
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/a4b199a9001e4642/green2_1%203.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=B5F4v0ABvOxmEAe87TS9WUiw5WAQ2qsv2x9wwiIZPsAv38FJgi609U2N0AJv-BPvTim3dFuncJh3XRL7KvHPE9GYmfD8XwZSnI3yJU9WocwpEMErGTSFvlEp4wQgdX9~yIV2HzIkd2FJmjhaAz704So7F2Y7ZL70vacjOfJchuI~MvPp9-3rk3N4V9Unf5EVc0NtJha9UdFZZt80AihmnkEnwae4AHCpJ9bCFXu1lpZiDR2Pm-3Yq71QH9yqu6D19h-MG5h84Y85SECe9gi3cErCF6An6xJZKYdtXr04PFRp~2ryZyOyNgxPNz38wCjz5T8q13UvbAUm5fsnU-65Tg__" />
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/cd34c0f71ba5447f/Rectangle%206684.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=K1OMa06MGCMGuEoqv~NhWD5wQuw-ubevgtk-j-kwSwp-aXaEVH85IMrXoR444nfbevF36Ba-g-yBrWkpBeCrSAAiU4axjklP6aDzvchzZR8vZ-JBwGcHt-oU~7UMLvBUhrGLpCwIHV70w7qS4Ik1p1UuqWLd1GlLP0mn5wfmIlSvYErMfXX2Byak-A1iJBB8zNi-Y-r5RTl6l1sVqiMARN7MBnqgKKiYJ9s56o9EJTE14hA~mpLW3U7OtkVRw4qYHJtZ5ibE3AmCb6yLdCLT~9wMzNhS~PTO8MBwsWz-BeT05zidKCYWgLKiJXWV5G1z2CrrKgG21WRo6GqGkCfSRQ__" />
+                    </div>
+                    <div>
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/cd34c0f71ba5447f/Rectangle%206684.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=K1OMa06MGCMGuEoqv~NhWD5wQuw-ubevgtk-j-kwSwp-aXaEVH85IMrXoR444nfbevF36Ba-g-yBrWkpBeCrSAAiU4axjklP6aDzvchzZR8vZ-JBwGcHt-oU~7UMLvBUhrGLpCwIHV70w7qS4Ik1p1UuqWLd1GlLP0mn5wfmIlSvYErMfXX2Byak-A1iJBB8zNi-Y-r5RTl6l1sVqiMARN7MBnqgKKiYJ9s56o9EJTE14hA~mpLW3U7OtkVRw4qYHJtZ5ibE3AmCb6yLdCLT~9wMzNhS~PTO8MBwsWz-BeT05zidKCYWgLKiJXWV5G1z2CrrKgG21WRo6GqGkCfSRQ__" />
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/cd34c0f71ba5447f/Rectangle%206684.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=K1OMa06MGCMGuEoqv~NhWD5wQuw-ubevgtk-j-kwSwp-aXaEVH85IMrXoR444nfbevF36Ba-g-yBrWkpBeCrSAAiU4axjklP6aDzvchzZR8vZ-JBwGcHt-oU~7UMLvBUhrGLpCwIHV70w7qS4Ik1p1UuqWLd1GlLP0mn5wfmIlSvYErMfXX2Byak-A1iJBB8zNi-Y-r5RTl6l1sVqiMARN7MBnqgKKiYJ9s56o9EJTE14hA~mpLW3U7OtkVRw4qYHJtZ5ibE3AmCb6yLdCLT~9wMzNhS~PTO8MBwsWz-BeT05zidKCYWgLKiJXWV5G1z2CrrKgG21WRo6GqGkCfSRQ__" />
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/dcd01d8ae53347d8/Group%201000003937.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0W9epxI8zYio0rjFZCQ157vCbkuzaB1lEpFd7JZ8ZPjfAB7iHdtKb09yUqJYlefw7TOb5jjwD8XYtx06f5cSQ0ffmDTdz-lcclSYCVDm6xmrxZsPzC1h4mBk3kJtB7crGbc-VKu1nZ7iKMs829pGDHo6nU-ZKTzg0KI~xgAG6RmLPwzF4E819wWv1eQxqT46irRj4O0wpsromfc-S1qp9wdTDMGjhpzuAobwlO3s46XGL75KtxzOow1dbkC07HCvWevPC7atFz18O0SMquigxaDjrKAr3Nq9rbyuIbGkPt84W2H~Wv2HnKKKjAKFNx~JAZeEk6vnOqiYBrJGxJDIgA__" />
+                        <img class="small-product-img" src="https://media-hosting.imagekit.io/a4b199a9001e4642/green2_1%203.png?Expires=1838312136&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=B5F4v0ABvOxmEAe87TS9WUiw5WAQ2qsv2x9wwiIZPsAv38FJgi609U2N0AJv-BPvTim3dFuncJh3XRL7KvHPE9GYmfD8XwZSnI3yJU9WocwpEMErGTSFvlEp4wQgdX9~yIV2HzIkd2FJmjhaAz704So7F2Y7ZL70vacjOfJchuI~MvPp9-3rk3N4V9Unf5EVc0NtJha9UdFZZt80AihmnkEnwae4AHCpJ9bCFXu1lpZiDR2Pm-3Yq71QH9yqu6D19h-MG5h84Y85SECe9gi3cErCF6An6xJZKYdtXr04PFRp~2ryZyOyNgxPNz38wCjz5T8q13UvbAUm5fsnU-65Tg__" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="prducts-content-right">
+                <div>
+                    <h1>Alcami Elements</h1>
+                    <div><span>*****</span> 4.7(999+ reviews) </div>
+                    <p>Discover the ancient wisdom supported by modern science, all within the synergy of Alcami Elements. Designed for those who aspire to elevate every facet of life with awareness and intention.</p>
+                </div>
+                <div>
+                    <h1>Choose a flavor</h1>
+                    <div>
+                        <img src="" alt="Original" />
+                        <img src="" alt="Matcha" />
+                        <img src="" alt="Cacao" />
+                    </div>
+                    <div>
+                        <h3>Most Popular</h3>
+                        <div>
+                            <img src="" alt="round-logo" />
+                            <p>Single Kit Subscription </p>
+                            <p>$37 USD  <span>$46</span></p>
+                            <hr/>
+                         </div>
+                         <p>What's included</p>
+                         <div>
+                            <div>
+                                <p>Every 30 Days</p>
+                                <img src="" alt="|alcmi 30 day img" />
+                            </div>
+                            <div>
+                                <p>One Time(Free)</p>
+                                <div>
+                                    <img src="" alt="bottle img" />
+                                    <p>+</p>
+                                    <img src="" alt="box img" />
+                                    <p>+</p>
+                                    <img src="" alt="spoon img" />
+                                </div>
+                            </div>
+                            <p><span>✔️</span>30 Servings Shipped Monthly</p>
+                            <p><span>✔️</span>Free Golden Kit Gold bottle + spoon (42$ value) </p>
+                            <p><span>✔️</span>Free 60 days supply of Alcami Shilajit ($78 value)</p>
+                            <p><span>✔️</span>50% OFF Shipping (Over $7-$10 in savings)</p>
+                            <p><span>✔️</span>Pause or Cancel Anytime after 3 months minimum</p>
+                            <p><span>✔️</span>90 Day Money Back Guarantee*</p>
+                            
+                            <div>
+                                <div>
+                                    <input type="radio" />
+                                    <p>Double Kit Subscrition</p>
+                                </div>
+                                <p>$68 USD  <span>$83</span></p>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" />
+                                    <p>Try Once</p>
+                                </div>
+                                <p>$46 USD </p>
+                            </div>
+                            <button>Add to Cart --></button>
+                        </div>                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="shilajit-section">
+        <div class="shilajit-container">
+            <div class="shilajit-product">
+                <img src="https://media-hosting.imagekit.io/ace9e201bf924789/Group%201000004262.png?Expires=1838219635&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=fyGdaMTe2eCZjdDAeMwsgsTKvn-DiPZvQ~zaIlf53rDDqp3jqETQDWKN-GNZHpLGDlCVO3Tyw3kGxcN2q8dv-HN2TrH8cvcQ2neACFO01tU6k-FmJxYlh0IKd2SUQAULrvNexbFvHtwQg2b2CPlLjXfrXNh3CenT9rUmsVwOAw9IpqUk4KNsGHiv-Fp3QaTYZ8Xgdgyx71r4uNGE82nGpmKKQ9aoPbRk1mx3ToRubQ0mwLhc3uQOD3tvIHaZr59byfTOvMiGuwpCP0tzvsanjZamOBOPGJLiuOKJm6fvE~b5shKSdtU5Dq1BRv~7~8UkPQFw1n8mM1RJ~HpwFIHEIw__" alt="Himalayan Shilajit">
+            </div>
+            <div class="shilajit-info">
+                <h2>Himalayan Shilajit</h2>
+                <p class="subheading">NATURE’S ULTIMATE ADAPTOGEN </p>
+                <div class="benefits">
+                    <div class="benefit-card">
+                        <img src="https://media-hosting.imagekit.io/537c733cc48b4595/Asset%201%202.png?Expires=1838219773&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WZtylYeHMUnau-~PhEJp79LTw0J4h3KCLjFYQimgrlM4AZEeT8tJH-CZfhtDR86mXuTGYs3qGjMXMf9i1KWzV6DBcxRzkS6IFTHrXOpNgomz2k4~vv0uLdpIirCHGLwgqBaj-ykXkpQj012tDR4QBT731cFT8zxn9N-RBQCfnTFnzJ1CJZGBUmT68cAykSaBM4CJ5fPLiIWeGjqjHVroknSloASR8rXMu2oOub8W-LtFuCFVo9CzWm~nvErJeTMoQaG6r6Qdhrvex1U0tRjmEOVHLLOEWtNcR1WZd0Sc8RHW5q9kJJF3ES75lskFehMFyj7IUyzmtLHqXJVAmzAFIQ__" alt="Energy Icon">
+                        
+                        <div>
+                        <h3>Boosts Energy and Stamina</h3>
+                        <p>Shilajit enhances vitality, supporting increased energy levels, physical endurance, and overall stamina.</p>
+                        </div>    
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://media-hosting.imagekit.io/b09aef59c1e1451a/Layer_1-2.png?Expires=1838219796&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ZM~alWkohSdUBQjEPRjtLE0gJf1JkeCJ7XB2jybkFfOhlpKkXJh0AXvZbGy7szSEmUTjU0ig~5Ui~dk3MbIx99ZM2jIAvzcX4toPA2~oiFuNmZgwOG6FZoLcVIGEqTT6eX2oFOgkpHdDdUxwKVKf25OwKkCBUgj9op7w3AewzxnvFNGxojd6bgJGnLS--m4PWesJCH3FO13BtMhPuG345QoyksteAmrvw5zFdcJPaMZ5y~lM4FDMZwCgAyoIJX-W~b~SUI541VQh4GKhfCzunzd-Xc7GScfDv7KECC6RXoxPVjzUo4DlsF8Ml8gl5r7uSkw-gbcaE6-EZHGIt8vvXg__" alt="Bone Health Icon">
+                        <div>
+                        <h3>Enhances Bone and Men's Health</h3>
+                        <p>Shilajit provides essential minerals for strong bones and has traditional uses in supporting men's reproductive health and testosterone levels.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://media-hosting.imagekit.io/a7f9e3d047d148dc/Group%201000004234.png?Expires=1838219773&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=pFgwE3EQm3pHAd81el-VsyW32~fYKj~TcbN3LQjA2PrHBpQeROmLShXSUO19sifOZNx62UKQprBZTnBl3v85hlhgPBbgblvPUUwkJyH-20B2oQnyumg8z14RkiCwcYXSPNpIiLs8hqHP7QB1QAwBZJoTgWgzZxVF25Fa1WU350l2LeI2MTkJYA9EQpL9ZBVYudt60SHPtIkwDm3Sur4PknpWeRqhMi8A8zdQEeCX2Qg1fE0XBIIK38Z1YhGMa6hhn5eOJSZKznqkzGxObmvfdnM5mPj~2I-l~2XH93GoaBG~T6-UEMgNkcswL~-GYwW9kuWaRu0G7dzsI1m2-ya36g__" alt="Mind Function Icon">
+                        <div>
+                        <h3>Promotes Cognitive Function & Stress Relief</h3>
+                        <p>Shilajit may improve mental clarity, focus, and memory while helping the body adapt to stress, enhancing overall resilience.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://media-hosting.imagekit.io/0cec726323a74f4e/Immunity%201.png?Expires=1838219773&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=M4KLrMmPlyeBHV0SmTv1BHZBQVqgqi5-hnphBO6MZgotexh270rXrgJykXlpasQut8DVbfm2lFVgLtyFi-~6nJnmdmPXkVu2KOlOT3oWGnB0c3kdUzr2Ym5TtlDBonC7cA8APm-n7ME45YVKH0fc1VuKo3aPD7i8FGzp-Br9D1WsmRHmMj-DwdTqhlfdl-wnqHMk6kPYMFIK0z6CyvV7sxQFUvWm6lgbAL2DjGsFk7XLnXQtbaTvNITX5uCaa3yUajJ7G~x21EyTL7x1GmFBKjrfh5Ftnp3aZhpd5cnKUek6VS-lL9mwqiKtPhTEBb1A3AibLDLWntbIJXGH16q77w__" alt="Immune Support Icon">
+                        <div>
+                        <h3>Supports Immune Health & Anti-Aging</h3>
+                        <p>Rich in antioxidants, Shilajit aids in reducing oxidative stress, boosting the immune system, and promoting skin health for a youthful appearance.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="shop-button">Try Shilajit →</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription ">
+        <div class="subscribe-content">
+            <p class="sub-heading">SUBSCRIPTION</p>
+            <h2>Subscribe & save <strong>20%</strong> + free frother and bottle and spoon</h2>
+            <div class="tags">
+                <span>LASER FOCUS</span>
+                <span>SUSTAINED ENERGY</span>
+                <span>CLEAR MIND</span>
+                <span>IMPROVED MOOD</span>
+                <span>NO CAFFEINE</span>
+                <span>CALM BALANCE</span>
+            </div>
+            <div>
+            <button class="shop-button">Subscribe Now →</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="morning-ritual">
+        <div class="steps-content">
+            <h1 class="steps-heading">Your morning ritual, <br>made to awaken your mind.</h1>
+            <p style="font-size: 16px;">Transform your mornings with a simple, potent, and powerful ritual that fuels your day.</p>
+            <div class="step">
+                <h2 class="s2-golden-line"><span >1 </span>Prep your favorite drink</h2>
+                <p>Start your morning with your favorite beverage, whether it's a nutrient-packed smoothie or a warm cup of tea.</p>
+            </div>
+            <div class="step">
+                <h2 class="s2-golden-line" ><span>2 </span>Take a scoop</h2>
+                <p>Simply add one potent scoop packed with x10 the potency to boost energy, enhance clarity, and support wellness all day.</p>
+            </div>
+            <div class="step">
+                <h2 class="s2-golden-line"><span >3 </span> Customize and mix</h2>
+                <p>Personalize your morning drink. Stir well for a perfectly blended, nutrient-rich beverage that awakens your mind.</p>
+            </div>
+            <button class="shop-button">See how people are using Alcami →</button>
+        </div>
+        <div class="video-container">
+            <img src="https://media-hosting.imagekit.io/06079a7913da4c07/Frame%201000003856.png?Expires=1838219119&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=TRgvKMTp0-GjXT2PYWHA3rNnnIYB9KRSxmDuq7OLWwLC0To~pxnwk8Oy61jTyZnlU2~P0ZU~t9JlhtmanKyutx~UJxEa-VLpoLDUJvO5wDf7HDCzAFuDJ46jVMyTjLZ7wT0yXxQiFvWYTgsjG2ECcTNOoPEW5cBZbtzCln0LXLEUUDcmukLmmq8iDBiy~OXjp8r72MBhiTLVZ2B0PaitSQVNdWAHqWN3kPN01x3xcHsfS8dxjOwJTZ16VAZxFDPw2jRkVXTDYggE5BXFEocaeqmDq1y3-NY6syolvkEAflm-~J7CyGbM16~2tlk7jgMQqhR88AQUWl0hi3EaZVdcQQ__" alt="Morning Ritual Video Thumbnail">
+        </div>
+    </section>
+
+
+    <!-- percentages -->
+    <section class="stats-section">
+        <div class="stat">
+            <h2>84%</h2>
+            <p>Reported increased energy throughout their day</p>
+        </div>
+        <div class="stat">
+            <h2>78%</h2>
+            <p>Reported feeling more focused</p>
+        </div>
+        <div class="stat">
+            <h2>89%</h2>
+            <p>Reported a sense of calmness & steady mood</p>
+        </div>
+        <div class="stat">
+            <h2>90%</h2>
+            <p>Reported feeling an overall increased wellness in their gut, skin, hair, and physical health</p>
+        </div>
+    </section>
+
+
+    <section class="comparison-section">
+        <h1>---</h1>
+        <h1>Why Alcami is the #1 Choice for your<br/> Productivity and Performance</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>BENEFITS</th>
+                        <th class="highlighted"><img src="https://media-hosting.imagekit.io/88adbfee566a4aa4/Gold3%201%20(1).png?Expires=1838217951&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=HWtOmekoBUaEA4P-qFnFqOJsWiM-hHH2hqltS3t3cI9aCC0sB9nXlvCnbCItUwXxP0ZXINTL972l5MX9CtnmiVho3qfDoSOu4eIIuxwDSfFpxt80fYxhTHdNR19OBhJnCqB3nyZP4BAmTMBVuYkNo9U6UDFhVfwuIiu0Szu1rLQZ1K-qpndndpSacZ24K-iDP4gxRAazPYfceCX6rP~KnDODrJZRcjjf0WEgH~MpQ2NtDwms2JCJllO2jZRTjFPperXuaeTnba4t0~mPK6jqznO-zfOezqoCfsXl33MBbqPoDFMN6bk4LUN4pLc8wzGfgxKsxzHsk614sSHshDrgUg__" alt="Alcami"><br>ALCAMI</th>
+                        <th><img src="https://media-hosting.imagekit.io/467436114c26479c/71pgZLjoKuL._SX679_%201.png?Expires=1838217951&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Dv~hX8T510uVCS41uCPWyRomZcfTwcxlrtEGL71JX9tu~~jqc0xSwhmTE1KvtAl9YjjjUCG0TEh9byPQiTxVHCngie0XUnNYXfvojujfCadGyK~g~JKRkbZHmhgUYXXlAAEwjUqgXMeCTjn54inHKwjmNqvl7jqkrSwydZlw8CgWEP-D7hTAujIyY-3Z0Ecx3ouw0b0kkXGuNJvLEAmB7op3fpw4F28BrWKaXW6njBqcmiYPc1DMRiRhDTlR3jtHUpg-eAt9p8qvnqh46pNCHjS5lW6yk9BISizvg1muNsDHrFBuNTfQmbiWbAOblK~aQn54iESMJn-0pJLDQs8t5g__" alt="Mudwtr"><br>MUD/WTR</th>
+                        <th><img src="https://media-hosting.imagekit.io/65cc3ee2f93244a3/71apr2WjcPL.__AC_SX300_SY300_QL70_FMwebp_%201.png?Expires=1838217951&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=wOvt1O5A8OTIk2mztfpDXgCH7Px6WKi~4h8almlfcW~CemwbnoGuhK7gsZvdy0dwQ8JruF3DL~ut3QtjBPP1JMQswmhFQqjjYxpCM05lzYfejI-OdkeQjC5i9Z~6eoLz2WRq2pdq-akCenw~HVoeut-7UvfiyBm2Y5EKTWk-kWqzWDNeH5A-coZ5LOWzWTJvEYawrGcW5ijNyt2q3bclRRyrJX0~htJpaNP2bKOuk0cbvCIFStwrJhUGmjeZWbeeAVBvopubMcwwkaQtiZhaKQk4lvnODlBySeCWJ25JSRUe-vzS--aK92Z0vnBFnmikiZy~NLaY7fb~LDMrDA5SBg__" alt="Ryze"><br>RYZE</th>
+                        <th><img src="https://media-hosting.imagekit.io/467436114c26479c/71pgZLjoKuL._SX679_%201.png?Expires=1838217951&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Dv~hX8T510uVCS41uCPWyRomZcfTwcxlrtEGL71JX9tu~~jqc0xSwhmTE1KvtAl9YjjjUCG0TEh9byPQiTxVHCngie0XUnNYXfvojujfCadGyK~g~JKRkbZHmhgUYXXlAAEwjUqgXMeCTjn54inHKwjmNqvl7jqkrSwydZlw8CgWEP-D7hTAujIyY-3Z0Ecx3ouw0b0kkXGuNJvLEAmB7op3fpw4F28BrWKaXW6njBqcmiYPc1DMRiRhDTlR3jtHUpg-eAt9p8qvnqh46pNCHjS5lW6yk9BISizvg1muNsDHrFBuNTfQmbiWbAOblK~aQn54iESMJn-0pJLDQs8t5g__" alt="Everyday Dose"><br>EVERYDAY DOSE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Potency Concentration</td>
+                        <td class="highlighted">10x</td>
+                        <td>1x</td>
+                        <td>1x</td>
+                        <td>10x</td>
+                    </tr>
+                    <tr>
+                        <td>Extracts Concentrates</td>
+                        <td class="highlighted check">✔</td>
+                        <td class="cross">✖</td>
+                        <td class="cross">✖</td>
+                        <td class="check">✔</td>
+                    </tr>
+                    <tr>
+                        <td>Effects You Can Feel</td>
+                        <td class="highlighted check">✔</td>
+                        <td class="cross">✖</td>
+                        <td class="cross">✖</td>
+                        <td class="check">✔</td>
+                    </tr>
+                    <tr>
+                        <td># of Beneficial Ingredients</td>
+                        <td class="highlighted">9</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Incredible Taste</td>
+                        <td class="highlighted check">✔</td>
+                        <td class="cross">✖</td>
+                        <td class="check">✔</td>
+                        <td class="check">✔</td>
+                    </tr>
+                    <tr>
+                        <td>No Caffeine</td>
+                        <td class="highlighted check">✔</td>
+                        <td class="cross">✖</td>
+                        <td class="check">✔</td>
+                        <td class="cross">✖</td>
+                    </tr>
+                    <tr>
+                        <td>No Starch or Myceliated Oats</td>
+                        <td class="highlighted check">✔</td>
+                        <td class="check">✔</td>
+                        <td class="cross">✖</td>
+                        <td class="check">✔</td>
+                    </tr>
+                    <tr>
+                        <td>100% Fruiting Body Mushroom</td>
+                        <td class="highlighted check">✔</td>
+                        <td class="cross">✖</td>
+                        <td class="check">✔</td>
+                        <td class="check">✔</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button-div">
+            <button class="shop-button">Try It Risk-Free →</button>
+        </div>
+    </section>
+
+
+    <section class="founders-section">
+        <div class="founder-video-container">
+            <!-- <img class="founder-video-container" src="https://media-hosting.imagekit.io/9d58794bfc434050/image%20(3).png?Expires=1838217062&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=oIwI60MPzx-1zCX2tzu42BilEkozJqGv9TObl11JgjqFc760nrVTMnkvR0r-LBjRHFTTgXKT1owfN5vWSUTHNnRhP4Ufko4g4SC73mukqwzfOoBEDc6~5MOJgMlw6deUU2B2dV206jMF32aoSIx2PXuoZXMt-qPxI9rGFo~TpZwibH~RIOUpMHl-EdTTKz-BJdlhAUiDM~PNJEAWoP~tlFSP5KOflH7D6jHRyls2VXFyFnV3S6z4IAosceWFmAeN5xOgXdTk-13ksOnaHvJX2TCWfPP0jrMLcICmVtS5EgnwcA7-tMPD0F5DUWJPbew4~g1Qp5Exl0JIgFbFC2oYBw__" alt="Founders Video" /> -->
+            <button class="play-button">▶</button>
+        </div>
+        <div class="founders-main">
+            <div class="founders-content-left">
+                <h1>From the Founders</h2>
+                <button class="shop-button">About Us →</button>
+            </div>
+            <div class="overlay">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit, sed do eiusmod</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reviews-section">
+        <h2>What our customers are saying</h2>
+        <p class="subtitle">real people, real reviews.</p>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                <div class="reviewer-info">
+                    <div class="avatar"></div>
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Name Surname</p>
+                        <p class="reviewer-position">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                <div class="reviewer-info">
+                    <div class="avatar"></div>
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Name Surname</p>
+                        <p class="reviewer-position">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                <div class="reviewer-info">
+                    <div class="avatar"></div>
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Name Surname</p>
+                        <p class="reviewer-position">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="arrow left-arrow">←</button>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="arrow right-arrow">→</button>
+        </div>
+    </section>
+
+
+    <section class="faq-section">
+        <div class="faq-content">
+            <h2>F.A.Qs</h2>
+            <p>If you have any question that isn’t answered in our FAQs, we’d love to hear from you!</p>
+            <button class="shop-button">Get in touch →</button>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <p>If I subscribe I cancel anytime?</p>
+                <span class="toggle">+</span>
+            </div>
+            <div class="faq-item">
+                <p>Can I take this at night?</p>
+                <span class="toggle">+</span>
+            </div>
+            <div class="faq-item">
+                <p>Where are your ingredients sourced from?</p>
+                <span class="toggle">+</span>
+            </div>
+            <div class="faq-item">
+                <p>Will this get me high?</p>
+                <span class="toggle">+</span>
+            </div>
+            <div class="faq-item">
+                <p>Are you using fruiting bodies for your mushrooms?</p>
+                <span class="toggle">+</span>
+            </div>
+            <a href="#" class="see-all">See all FAQ's <span class="arrow">→</span></a>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Sign up and receive up to 15% OFF on your first order</h2>
+            <p>Get weekly recipes, insights, and freebies when you sign up to our newsletter.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe <span class="arrow">→</span></button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <h1 class="alcami-logo">ALCAMI</h1>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="#"><span class="icon">&#xf09a;</span> Facebook</a>
+                <a href="#"><span class="icon">&#xf16d;</span> Instagram</a>
+                <a href="#"><span class="icon">&#xf099;</span> X</a>
+            </div>
+            <div class="newsletter">
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+                <small>By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</small>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 ALCAMI ELEMENTS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- Product Section -->
+    <!-- <section class="product">
+        <div class="gallery">
+            <button id="prev">&lt;</button>
+            <img id="main-image" src="assets/img1.jpg" alt="Product Image">
+            <button id="next">&gt;</button>
+            <div class="thumbnails">
+                <img class="thumb" src="assets/img1.jpg" data-src="assets/img1.jpg">
+                <img class="thumb" src="assets/img2.jpg" data-src="assets/img2.jpg">
+                <img class="thumb" src="assets/img3.jpg" data-src="assets/img3.jpg">
+            </div>
+        </div>
+
+
+        <div class="options">
+            <h3>Choose Flavor:</h3>
+            <label><input type="radio" name="flavor" value="chocolate"> Chocolate</label>
+            <label><input type="radio" name="flavor" value="vanilla"> Vanilla</label>
+            <label><input type="radio" name="flavor" value="strawberry"> Strawberry</label>
+            
+            <h3>Choose Purchase Type:</h3>
+            <label><input type="radio" name="purchase" value="one-time"> One-Time</label>
+            <label><input type="radio" name="purchase" value="subscription"> Subscription</label>
+            <label><input type="radio" name="purchase" value="gift"> Gift</label>
+            
+            <a id="cart-link" href="#">Add to Cart</a>
+        </div>
+    </section> -->
+
+    <!-- Percentage Counter -->
+    <!-- <section class="stats">
+        <div data-target="84">0%</div>
+        <div data-target="78">0%</div>
+    </section> -->
+
+    <!-- FAQ Section -->
+    <!-- <section class="faq">
+        <div class="faq-item">
+            <button class="faq-question">What is the return policy?</button>
+            <p class="faq-answer hidden">You can return within 30 days.</p>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do you offer free shipping?</button>
+            <p class="faq-answer hidden">Yes, on orders over $50.</p>
+        </div>
+    </section> -->
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>
